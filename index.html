@@ -56,8 +56,8 @@
               <th class="th-num">J</th>
               <th class="th-num">V</th>
               <th class="th-num th-oculta-mobile">D</th>
-              <th class="th-num th-oculta-mobile">GF</th>
-              <th class="th-num th-oculta-mobile">GC</th>
+              <th class="th-num">GF</th>
+              <th class="th-num">GC</th>
               <th class="th-num">SG</th>
               <th class="th-num">Pts</th>
             </tr>
@@ -66,7 +66,13 @@
         </table>
       </div>
       <p class="legenda">
-        J = jogos · V = vitórias · SG = Saldo de Games · Pts = pontos (3 por vitória 1 empate 0 por derrota)
+        J = jogos · V = vitórias · D = derrotas · GF = games feitos · GC = games sofridos ·
+        SG = saldo de games · Pts = pontos
+      </p>
+      <p class="explicacao-saldo">
+        <strong>Como calcular o SG:</strong> SG = GF − GC.
+        Exemplo: Erson &amp; Carlos fizeram 15 games e sofreram 9, então o saldo é
+        <strong>15 − 9 = +6</strong>.
       </p>
     </section>
 
@@ -79,7 +85,7 @@
 
   <footer class="rodape">
     <p>🏆 Campeonato de Padel · Porto Padel · Sábado, 28 de Novembro</p>
-    <p class="rodape-sub">Atualize os resultados editando o <code>data.json</code></p>
+    <p>created by @vinicius.wessner</p>
   </footer>
 
   <script src="app.js"></script>

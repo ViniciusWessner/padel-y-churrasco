@@ -146,13 +146,12 @@ function renderClassificacao() {
       <td class="td-posicao" data-label="#">${pos}º</td>
       <td class="td-dupla" data-label="Dupla">
         <div class="dupla-nome">${s.nome}</div>
-        <div class="dupla-jogadores">${s.jogadores.join(' · ')}</div>
       </td>
       <td class="td-num" data-label="J">${s.jogos}</td>
       <td class="td-num num-vitorias" data-label="V">${s.vitorias}</td>
       <td class="td-num th-oculta-mobile" data-label="D">${s.derrotas}</td>
-      <td class="td-num th-oculta-mobile" data-label="GF">${s.gamesFeitos}</td>
-      <td class="td-num th-oculta-mobile" data-label="GC">${s.gamesSofridos}</td>
+      <td class="td-num" data-label="GF">${s.gamesFeitos}</td>
+      <td class="td-num" data-label="GC">${s.gamesSofridos}</td>
       <td class="td-num ${s.saldoGames > 0 ? 'saldo-positivo' : s.saldoGames < 0 ? 'saldo-negativo' : ''}" data-label="SG">
         ${s.saldoGames > 0 ? '+' : ''}${s.saldoGames}
       </td>

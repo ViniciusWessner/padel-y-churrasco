@@ -259,6 +259,12 @@ code {
   font-size: 0.74rem;
   color: var(--texto-suave);
 }
+.dupla-saldo {
+  display: none;
+  font-size: 0.68rem;
+  color: var(--texto-suave);
+  margin-top: 0.15rem;
+}
 
 tr.posicao-1 .td-posicao { color: var(--ouro); }
 tr.posicao-1 { background: #fffbe6; }
@@ -278,6 +284,20 @@ tr.posicao-3 .td-posicao { color: var(--bronze); }
   font-size: 0.74rem;
   color: var(--texto-suave);
   text-align: center;
+}
+.explicacao-saldo {
+  margin-top: 0.6rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--bg-card);
+  color: var(--texto-suave);
+  font-size: 0.78rem;
+  text-align: center;
+  box-shadow: var(--sombra);
+}
+.explicacao-saldo strong {
+  color: var(--texto);
 }
 
 /* ===== Jogos ===== */
@@ -376,6 +396,10 @@ tr.posicao-3 .td-posicao { color: var(--bronze); }
 /* ===== Responsivo ===== */
 /* Mobile-first: tudo já é otimizado pra celular.
    Ajustes só pra telas um pouco maiores (tablet/desktop). */
+@media (max-width: 599px) {
+  .dupla-saldo { display: block; }
+}
+
 @media (min-width: 600px) {
   .podio {
     flex-direction: row;
