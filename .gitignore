@@ -1,0 +1,19 @@
+# Dependências
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ambiente / variáveis
+.env
+.env.local

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campeonato de Padel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-conteudo">
+      <h1>🎾 Padel y Churrasco</h1>
+      <p class="subtitulo">Campeonato entre amigos · 4 duplas · todos contra todos</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Loading / erro -->
+    <div id="loading" class="loading">Carregando campeonato…</div>
+    <div id="erro-carregamento" class="erro hidden">
+      Não foi possível carregar o <code>data.json</code>. Se você abriu o arquivo direto no navegador (file://), isso é bloqueado por segurança — use um servidor local (<code>npx serve</code>) ou hospede no GitHub Pages.
+    </div>
+
+    <!-- Card de info do evento -->
+    <section class="info-evento">
+      <div class="info-item">
+        <span class="info-icone">📍</span>
+        <span class="info-texto">Porto Padel</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icone">📅</span>
+        <span class="info-texto">Sábado, 28/11</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icone">🏆</span>
+        <span class="info-texto">4 duplas · 6 jogos</span>
+      </div>
+    </section>
+
+    <section class="podi-secao">
+      <h2 class="titulo-secao">Pódio</h2>
+      <div id="podio" class="podio"></div>
+    </section>
+
+    <section class="tabela-secao">
+      <h2 class="titulo-secao">Classificação</h2>
+      <div class="tabela-wrap">
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th class="th-dupla">Dupla</th>
+              <th class="th-num">J</th>
+              <th class="th-num">V</th>
+              <th class="th-num th-oculta-mobile">D</th>
+              <th class="th-num th-oculta-mobile">GF</th>
+              <th class="th-num th-oculta-mobile">GC</th>
+              <th class="th-num">SG</th>
+              <th class="th-num">Pts</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-classificacao"></tbody>
+        </table>
+      </div>
+      <p class="legenda">
+        J = jogos · V = vitórias · D = derrotas · GF = games feitos ·
+        GC = games sofridos · SG = saldo · Pts = pontos (3 por vitória)
+      </p>
+    </section>
+
+    <section class="jogos-secao">
+      <h2 class="titulo-secao">Jogos</h2>
+      <div id="lista-jogos" class="lista-jogos"></div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>🏆 Campeonato de Padel · Porto Padel · Sábado, 28 de Novembro</p>
+    <p class="rodape-sub">Atualize os resultados editando o <code>data.json</code></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

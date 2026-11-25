@@ -1,0 +1,16 @@
+{
+  "duplas": [
+    { "id": 1, "nome": "Vlacir & Rodrigo",   "jogadores": ["Vlacir", "Rodrigo"] },
+    { "id": 2, "nome": "Erson & Carlos",      "jogadores": ["Erson", "Carlos"] },
+    { "id": 3, "nome": "Wellington & Cassio", "jogadores": ["Wellington", "Cassio"] },
+    { "id": 4, "nome": "Vinicius & Jonas",    "jogadores": ["Vinicius", "Jonas"] }
+  ],
+  "jogos": [
+    { "id": 1, "duplaA": 1, "duplaB": 2, "gamesA": 3, "gamesB": 6 },
+    { "id": 2, "duplaA": 3, "duplaB": 4, "gamesA": 6, "gamesB": 4 },
+    { "id": 3, "duplaA": 1, "duplaB": 3, "gamesA": 2, "gamesB": 6 },
+    { "id": 4, "duplaA": 2, "duplaB": 4, "gamesA": 3, "gamesB": 6 },
+    { "id": 5, "duplaA": 1, "duplaB": 4, "gamesA": 6, "gamesB": 1 },
+    { "id": 6, "duplaA": 2, "duplaB": 3, "gamesA": 6, "gamesB": 0 }
+  ]
+}
